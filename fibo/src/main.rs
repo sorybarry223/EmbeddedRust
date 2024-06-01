@@ -1,13 +1,5 @@
 use clap::Parser;
 
-fn fibo_recursive(n: u32) -> u32{
-    match n {
-        0   => 0,
-        1   => 1,
-        _   => fibo_recursive(n - 1) + fibo_recursive(n -2)
-    }
-}
-
 fn fibo_iterative(n: u32) -> Option<u32> {
     if n == 0 {
         return Some(0);
@@ -49,5 +41,4 @@ fn main() {
             }
         }
     }
-
 }
