@@ -4,6 +4,6 @@ fn ret_string() -> String {
 
 fn main() {
     let s = ret_string();
-    let q = s.trim();
-    assert_eq!(q, "A String object");
+    let l = s.trim();
+    assert_eq!(l, "A String object");
 }
